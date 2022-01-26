@@ -10,7 +10,7 @@ const FriendHeader = (props) => {
             <div className="right">
                 <Link className="black-box" to="/login">LOGIN</Link>
                 <Link className="black-box" to="/friends">FRIENDLIST</Link>
-                <Link className="black-box" to="/addfriend">ADDFRIEND</Link>
+                <Link className="black-box" to="/friends/add">ADDFRIEND</Link>
             </div>
         </header>
     )

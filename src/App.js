@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <FriendHeader />
       <Switch>
+        <PrivateRoute path="/friends/add" component={FriendForm} />
         <PrivateRoute path="/friends" component={FriendList} />
-        <PrivateRoute path="/addfriend" component={FriendForm} />
         <Route path="/login" component={Login} />
         <Route path="/" component={Login} />
       </Switch>
