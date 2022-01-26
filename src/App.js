@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
 import FriendList from './components/FriendList';
 import FriendForm from './components/FriendForm';
@@ -11,8 +12,8 @@ function App() {
     <div className="App">
       <FriendHeader />
       <Switch>
-        <Route path="/friendlist" component={FriendList} />
-        <Route path="/addfriend" component={FriendForm} />
+        <PrivateRoute path="/friends" component={FriendList} />
+        <PrivateRoute path="/addfriend" component={FriendForm} />
         <Route path="/login" component={Login} />
         <Route path="/" component={Login} />
       </Switch>

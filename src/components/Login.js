@@ -24,7 +24,7 @@ const Login = (props) => {
                     username: '',
                     password: ''
                 })
-                push("/friendlist");
+                push("/friends");
             }).catch(err => console.error(err));
     }
 

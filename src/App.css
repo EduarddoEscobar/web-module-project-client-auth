@@ -81,6 +81,22 @@ form{
   font-size: 1.5rem;
 }
 
+.friendlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend{
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  margin: 2% 0;
+}
+
 .black-box{
   border: none;
   background: black;

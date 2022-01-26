@@ -49,10 +49,10 @@ Each friend object has the format:
 * [x] When submitting your login form, save the token returned to localStorage and redirect to the FriendsList route.
 
 #### Build the friendslist component
-* [ ] Use the [mockup provided](./friendslist_mockup.png) to build out a simple list component made to display all friends.
-* [ ] When the component mounts, make a call to the api retrieving all friends. Remember that this is a protected route.
-* [ ] In `App.js`, add a route to allow this component to be displayed when navigating to `/friends`
-* [ ] In your login component, add code to your submission code the ability to redirect to your friendslist component.
+* [x] Use the [mockup provided](./friendslist_mockup.png) to build out a simple list component made to display all friends.
+* [x] When the component mounts, make a call to the api retrieving all friends. Remember that this is a protected route.
+* [x] In `App.js`, add a route to allow this component to be displayed when navigating to `/friends`
+* [x] In your login component, add code to your submission code the ability to redirect to your friendslist component.
 
 #### Build the addFriends component
 * [ ] Use the [mockup provided](./addfriends_mockup.png) to build out a simple component allowing you to collect data to add in a new friend.
@@ -67,8 +67,8 @@ Each friend object has the format:
 * [ ] In `App.js`, create a navigation bar that allows the user to redirect to logout, friendslist or add friend.
 
 #### Build the a PrivateRoute component
-* [ ] Create a `<PrivateRoute />` component to protect your other routes. It should check localStorage for a token, and redirect the user to your login route if there is not a token.
-* [ ] Use your protected route to restrict access to your `/friends` and `/friends/add` routes.
+* [x] Create a `<PrivateRoute />` component to protect your other routes. It should check localStorage for a token, and redirect the user to your login route if there is not a token.
+* [x] Use your protected route to restrict access to your `/friends` and `/friends/add` routes.
 
 ### Task 3: Stretch goals
 - [ ] Add in a modularized way to access protected endpoints using axiosWithAuth.
@@ -76,7 +76,7 @@ Each friend object has the format:
 - [ ] Style as you wish.
 
 ### Submission Format
-- [ ] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
-- [ ] Connect your fork to Codegrade using the "Connect Git" button.
-- [ ] Find your newly created fork from the list and push your work to main.
-- [ ] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
+- [z] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
+- [z] Connect your fork to Codegrade using the "Connect Git" button.
+- [z] Find your newly created fork from the list and push your work to main.
+- [z] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
