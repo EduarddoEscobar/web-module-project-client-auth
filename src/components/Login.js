@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 const Login = (props) => {
+    const { push } = useHistory();
     const [state, setState] = useState({
         username: '',
         password: ''
@@ -11,10 +14,24 @@ const Login = (props) => {
         setState({...state, [name]: value});
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('http://localhost:9000/api/login', state)
+            .then(resp => {
+                localStorage.setItem('token', resp.data.token);
+                setState({
+                    ...state,
+                    username: '',
+                    password: ''
+                })
+                push("/friendlist");
+            }).catch(err => console.error(err));
+    }
+
     return(
         <div className="Login">
             <h1>LOGIN</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>USERNAME</label>
                     <input className="black-box" type="text" value={state.username} name="username" onChange={handleChange}/>
