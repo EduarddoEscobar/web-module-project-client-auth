@@ -11,6 +11,7 @@ const FriendHeader = (props) => {
                 <Link className="black-box" to="/login">LOGIN</Link>
                 <Link className="black-box" to="/friends">FRIENDLIST</Link>
                 <Link className="black-box" to="/friends/add">ADDFRIEND</Link>
+                <Link className="black-box" to="/logout">LOGOUT</Link>
             </div>
         </header>
     )

@@ -8,7 +8,6 @@ const FriendList = (props) => {
     useEffect(() => {
         axiosWithAuth().get('/friends')
             .then(resp => {
-                console.log(resp);
                 setFriends(resp.data);
             }).catch(err => console.error(err));
     }, []);

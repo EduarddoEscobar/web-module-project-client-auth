@@ -61,10 +61,10 @@ Each friend object has the format:
 * [x] In `App.js`, add a route to allow this component to be displayed when navigating to `/friends/add`.
 
 #### Build a logout button
-* [ ] Build out a simple component allowing you to logout of your application cleanly.
-* [ ] The component should make a call to the logout endpoint and remove the token on local storage by default.
-* [ ] In `App.js`, add a route to allow this component to be displayed when navigating to `/logout`.
-* [ ] In `App.js`, create a navigation bar that allows the user to redirect to logout, friendslist or add friend.
+* [x] Build out a simple component allowing you to logout of your application cleanly.
+* [x] The component should make a call to the logout endpoint and remove the token on local storage by default.
+* [x] In `App.js`, add a route to allow this component to be displayed when navigating to `/logout`.
+* [x] In `App.js`, create a navigation bar that allows the user to redirect to logout, friendslist or add friend.
 
 #### Build the a PrivateRoute component
 * [x] Create a `<PrivateRoute />` component to protect your other routes. It should check localStorage for a token, and redirect the user to your login route if there is not a token.
@@ -76,7 +76,7 @@ Each friend object has the format:
 - [ ] Style as you wish.
 
 ### Submission Format
-- [z] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
-- [z] Connect your fork to Codegrade using the "Connect Git" button.
-- [z] Find your newly created fork from the list and push your work to main.
-- [z] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
+- [x] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
+- [x] Connect your fork to Codegrade using the "Connect Git" button.
+- [x] Find your newly created fork from the list and push your work to main.
+- [x] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
